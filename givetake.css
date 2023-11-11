@@ -1,0 +1,128 @@
+.content{
+    flex:1;
+    /* background-color: beige; */
+    display:flex;
+    flex-direction:row;
+    /* padding:1rem; */
+    justify-content: space-around;
+    /* padding:1rem; */
+    /* flex-wrap: wrap; */
+}
+.content .givebook{
+    /* width:40%; */
+    /* height:70%; */
+    /* background-color: red; */
+    background-color:black;
+    box-shadow:2px 2px 4px rgba(255,255,255,0.3);
+    /* padding:5rem; */
+    margin:1rem;
+
+}
+.content .takebook{
+    /* width:40%; */
+    /* height:70%; */
+    /* background-color: rgb(196, 196, 19); */
+    background-color:black;
+    box-shadow:2px 2px 4px rgba(255,255,255,0.3);
+    margin:1rem;
+    /* justify-content: center; */
+}
+.takebook{
+    /* display:flex; */
+    flex-direction:column;
+    /* padding:1rem; */
+
+}
+.takebook .takebook-top{
+    height:20%;
+    width: 100%;
+    font-size:1.3rem;
+    text-align: center;
+    /* background-color: blue; */
+    /* margin:1rem; */
+}
+.takebook .takebook-mid{
+    /* background-color: green; */
+    height:60%;
+    width:100%;
+    /* background-color: blueviolet; */
+}
+.takebook .takebook-end{
+    height:20%;
+    width:100%;
+    /* background-color: rgb(193, 29, 29); */
+}
+
+.givebook{
+    /* display:flex; */
+    flex-direction:column;
+    /* font-size:1.3rem; */
+    /* text-align: center; */
+    
+    /* padding:1rem; */
+}
+.givebook .givebook-top{
+    height:20%;
+    width: 100%;
+    font-size:1.3rem;
+    text-align:center;
+    /* background-color: blue; */
+    /* margin:1rem; */
+}
+.givebook .givebook-mid{
+    height:60%;
+    width:100%;
+    /* font-size:1rem; */
+    /* background-color: blueviolet; */
+}
+.givebook .givebook-end{
+    height:20%;
+    width:100%;
+    /* background-color: rgb(193, 29, 29); */
+    
+}
+
+button{
+    /* background-color: black; */
+    background-color:#121212;
+    font-size:1rem;
+    /* margin:3rem 5rem 0rem 5rem; */
+    box-shadow:2px 2px 5px rgba(255,255,255,0.3);
+    padding:0 1rem 0 1rem;
+    transition:0.4s;
+    border-radius: 0.5rem;
+}
+button:hover{
+    box-shadow:2px 2px 7px rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255);
+    color:black;
+}
+
+ @media (max-width:650px){
+    *{
+         margin:0rem; 
+        padding:0;
+    }
+    
+    .content{
+        display: flex;
+        /* background-color: yellow; */
+        flex-direction:column;
+        flex-wrap:wrap;
+
+    }
+    
+    .content .givebook{
+       
+         /* width:100%;  */
+        height:20rem;
+    }
+    /*.content .givebook .givebook-mid{
+        font-size: 0.5rem;
+    }*/
+    .content .takebook{
+        /* font-size: 1rem; */
+        /* width:100%; */
+        height:20rem;
+    }
+}
